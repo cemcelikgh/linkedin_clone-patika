@@ -1,6 +1,7 @@
-# linkedin-clone-kodluyoruz-patika
-Patika.dev Bootstrap Ödev 3
+# linkedin-clone
+Patika Beginner Frontend Web Development Path Certification Task
+<br>LinkedIn Clone
 
-https://www.patika.dev https://kodluyoruz.org
+Browse: <https://cemcelikgh.github.io/linkedin-clone/>
 
-![linkedin-clone-kodluyoruz-patika](https://images2.imgbox.com/31/30/hF865T2I_o.jpg)
+[![LinkedIn Clone Preview](./assets/linkedin-clone-preview.jpg "Browse LinkedIn Clone")](https://cemcelikgh.github.io/linkedin-clone/)

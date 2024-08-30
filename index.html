@@ -3,104 +3,97 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linkedin</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+    <title>LinkedIn</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/linkedin-brands-solid.svg">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body class="body">
-    <nav class="container-fluid">
-      <div class="row">
-        <div class="col-12 navbarbg d-flex justify-content-center align-items-center">
-          <div class="d-flex justify-content-center align-items-center">
+    <!-- Nav Start -->
+    <div class="container-fluid fixed-top navbar-bg"></div>
+    <nav class="container fixed-top" style="z-index: 5;">
+      <div class="d-md-none" style="height: 10px;"></div>
+      <div class="row d-flex flex-nowrap justify-content-between align-items-center">
+        <div class="col-auto">
+          <div class="d-flex justify-content-start align-items-center">
             <a class="mt-n1" href="#">
               <i class="fab fa-linkedin fa-lg" style="color: #0a66c2; font-size: 2.4rem"></i>
             </a>
-            <form class="form-inline ml-3">
-              <input class="form-control searche" type="search" placeholder="     Arama Yap" aria-label="Search"/>
+            <form class="form-inline ml-3 d-sm-none d-lg-block">
+              <input class="form-control srch" type="search" placeholder="        Arama Yap" aria-label="Search"/>
             </form>
           </div>
-          <div class="d-none d-lg-block" style="width: 150px;">
-          </div>
-          <div>
-            <div class="d-none d-lg-flex justify-content-end align-items-center">
-              <div class="d-none d-lg-block">
-                <a class="nav-link d-flex flex-column align-items-center" href="#">
-                  <i class="fas fa-home fa-lg" style="color: black;"></i>
-                  <div class="menutext" style="color: black">
-                    Ana Sayfa
-                  </div>
-                </a>
+        </div>
+        <div class="col-auto">
+          <div class="d-flex justify-content-end align-items-center">
+            <a class="search nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-search fa-lg d-none d-sm-block d-lg-none" style="color: black;"></i>
+              <div class="menutext d-none d-md-block d-lg-none">
+                Arama
               </div>
-              <div class="d-none d-lg-block">
-                <a class="nav-link d-flex flex-column align-items-center" href="#">
-                  <i class="fas fa-user-friends fa-lg"></i>
-                  <div class="menutext">
-                    Ağım
-                  </div>
-                </a>
+            </a>
+            <a class="home nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-home fa-lg" style="color: black;"></i>
+              <div class="menutext d-none d-md-block" style="color: black;">
+                Ana Sayfa
               </div>
-              <div class="d-none d-lg-block">
-                <a class="nav-link d-flex flex-column align-items-center" href="#">
-                  <i class="fas fa-briefcase fa-lg"></i>
-                  <div class="menutext">
-                    İş İlanları
-                  </div>
-                </a>
+            </a>
+            <a class="user-friends nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-user-friends fa-lg d-none d-sm-block"></i>
+              <div class="menutext d-none d-md-block">
+                Ağım
               </div>
-              <div class="d-none d-lg-block">
-                <a class="nav-link d-flex flex-column align-items-center" href="#">
-                  <i class="fas fa-comment-dots fa-lg"></i>
-                  <div class="menutext">
-                    Mesajlaşma
-                  </div>
-                </a>
+            </a>
+            <a class="briefcase nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-briefcase fa-lg d-none d-sm-block"></i>
+              <div class="menutext d-none d-md-block">
+                İş İlanları
               </div>
-              <div class="d-none d-lg-block">
-                <a class="nav-link d-flex flex-column align-items-center" href="#">
-                  <i class="fas fa-bell fa-lg"></i>
-                  <div class="menutext">
-                    Bildirimler
-                  </div>
-                </a>
+            </a>
+            <a class="comment-dots nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-comment-dots fa-lg d-none d-sm-block"></i>
+              <div class="menutext d-none d-md-block">
+                Mesajlaşma
               </div>
-              <div class="d-none d-lg-block">
-                <a class="nav-link d-flex flex-column align-items-center mt-1" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="assets\cengizcmataraci.jpg" style=" width: 25px; height: 25px; border-radius: 50%; margin-bottom: -5px;" />
-                  <div class="menutext">
-                    Ben
-                  </div>
-                </a>
+            </a>
+            <a class="bell nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-bell fa-lg d-none d-sm-block"></i>
+              <div class="menutext d-none d-md-block">
+                Bildirimler
               </div>
-              <div class="border-left d-none d-xl-block ml-xl-2" style="width: 1rem; height: 64px;">
+            </a>
+            <i class="fas fa-bars d-sm-none"></i>
+            <a id="me" class="nav-link d-flex flex-column align-items-center mt-1" href="#">
+              <img src="./assets/profile-pictures/cengiz-c-mataraci.jpg" style=" width: 25px; height: 25px; border-radius: 50%; margin-bottom: -5px;" />
+              <div class="menutext d-none d-md-block">
+                Ben
               </div>
-              <div class="d-none d-xl-block">
-                <a class="nav-link d-flex flex-column align-items-center d-none d-xl-block" href="#">
-                  <i class="fas fa-th fa-lg"></i>
-                  <div class="menutext">
-                    İş
-                  </div>
-                </a>
+            </a>
+            <a class="th nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-th fa-lg fa-lg"></i>
+              <div class="menutext text-center d-none d-xl-block">
+                İş
               </div>
-              <div class="d-none d-xl-block">
-                <a class="nav-link d-flex flex-column align-items-center" href="#">
-                  <i class="fas fa-chalkboard fa-lg"></i>
-                  <div class="menutext">
-                    İş İlanı Yayınla
-                  </div>
-                </a>
+            </a>
+            <a class="chalkboard nav-link d-flex flex-column align-items-center" href="#">
+              <i class="fas fa-chalkboard fa-lg d-none d-lg-block"></i>
+              <div class="menutext d-none d-xl-block">
+                İş İlanı Yayınla
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </nav>
-    <div class="container">
+    <!-- Nav End -->
+    <div class="container mt-5">
       <div class="row pt-5">
+        <!-- Left Aside Start -->
         <div class="d-none d-lg-block col-lg-4 col-xl-3">
           <div class="card">
             <div class="card-header" style=" background-image: url(assets/meeting.JPG); height: 53px;">
-              <img src="assets\cengizcmataraci.jpg" class=" d-block m-auto border border-white rounded-circle" style="width: 70px; height: 70px; border-width: 2px!important;"/>
+              <img src="./assets/profile-pictures/cengiz-c-mataraci.jpg" class=" d-block m-auto border border-white rounded-circle" style="width: 70px; height: 70px; border-width: 2px!important; cursor: pointer;"/>
             </div>
             <div class="card-body">
               <p class="card-title header text-center mt-4">
@@ -137,8 +130,8 @@
               </div>
             </div>
             <div class="card-footer bg-white">
-              <i class="fas fa-bookmark"></i>
-              <span class="mb-4 ml-2">
+              <i class="fas fa-bookmark" style="cursor: pointer;"></i>
+              <span class="mb-4 ml-2" style="cursor: pointer;">
                 Ögelerim
               </span>
             </div>
@@ -149,8 +142,8 @@
             </div>
             <div class="card-body">
               <div class="card-title">
-                <img src="assets\kablosuz_beyin.jpg" style="width: 32px; height: 32px;"/>
-                <div style=" font-size: 1rem; font-weight: bold; margin-top: -2.2rem; margin-left: 2.5rem;">
+                <img src="./assets/profile-pictures/kablosuz-beyin.jpg" style="width: 32px; height: 32px; cursor: pointer;"/>
+                <div style=" font-size: 1rem; font-weight: bold; margin-top: -2.2rem; margin-left: 2.5rem; cursor: pointer;">
                   Kablosuz Beyin
                 </div>
                 <div style=" font-size: 0.75rem; font-weight: bold; color: gray; margin-left: 2.5rem;">
@@ -162,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="card mt-2" style="position: sticky; top: 4rem; overflow: visible;">
+          <div class="card mt-2" style="position: sticky; top: calc(4rem + 10px) ; overflow: visible;">
             <div class="card-header bg-white border-0" style="font-size: 12px">
               En Yeni
             </div>
@@ -224,22 +217,24 @@
                 </div>
               </div>
             </div>
-            <div class="card-footer bg-white">
+            <div class="card-footer bg-white" style="cursor: pointer;">
               Daha fazla keşfet
             </div>
           </div>
         </div>
+        <!-- Left Aside End -->
+        <!-- Center Section Start -->
         <div class="col-lg-8 col-xl-6">
           <div class="card">
             <div class="card-body">
               <input
                 type="text"
                 class="form-control content mb-3"
-                placeholder="       Bir gönderi başlat"
+                placeholder="          Bir gönderi başlat"
               />
               <div class="d-flex justify-content-between">
                 <span>
-                  <button class="mediatext border-0">
+                  <button class="mediatext border-0 pt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" fill="#70B5F9" focusable="false">
                       <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
                     </svg>
@@ -249,7 +244,7 @@
                   </button>
                 </span>
                 <span>
-                  <button class="mediatext border-0">
+                  <button class="mediatext border-0 pt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" fill="#7FC15E" focusable="false">
                       <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
                     </svg>
@@ -259,7 +254,7 @@
                   </button>
                 </span>
                 <span>
-                  <button class="mediatext border-0">
+                  <button class="mediatext border-0 pt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" fill="#E7A33E" focusable="false">
                       <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
                     </svg>
@@ -269,7 +264,7 @@
                   </button>
                 </span>
                 <span>
-                  <button class="mediatext border-0">
+                  <button class="mediatext border-0 pt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" width="24" height="24" fill="#F5987E" focusable="false">
                       <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
                     </svg>
@@ -287,7 +282,7 @@
           <div class="card">
             <div class="card-header d-flex justify-content-between bg-white border-0">
               <div class="d-flex justify-content-start">
-                <img src="assets\david_j_malan.jpg" class="postphoto my-auto">
+                <img src="./assets/other-pictures/1613923672703.jfif" class="postphoto my-auto" style="cursor: pointer;">
                 <div class="d-flex flex-column align-baseline pl-3">
                   <span class="posttext">
                     <a href="#" target="_blank" style="color: #212529;">
@@ -303,7 +298,7 @@
                 </div>
               </div>
               <div>
-                <i class="fas fa-ellipsis-h fa-md"></i>
+                <i class="fas fa-ellipsis-h fa-md" style="cursor: pointer;"></i>
               </div>
             </div>
             <div>
@@ -312,12 +307,13 @@
               </p>
               <div>
               <img
-                src="https://pbs.twimg.com/media/Em2_xBbXUAEVDx1.jpg"
+                src="./assets/other-pictures/Em2_xBbXUAEVDx1.jpg"
                 class="card-img-top mb-1"
+                style="cursor: pointer;"
                 alt="..."
               />
               </div>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="like-consumption-small" data-supported-dps="16x16" class="ml-3">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="like-consumption-small" data-supported-dps="16x16" class="ml-3" style="cursor: pointer;">
                 <g fill="none" fill-rule="evenodd">
                   <rect width="16" height="16" rx="8"/>
                   <circle fill="#1485BD" cx="8" cy="8" r="7"/>
@@ -325,7 +321,7 @@
                   <path d="M7.43 6.43H4.11a.88.88 0 00-.88 1 .91.91 0 00.93.84h.16a.78.78 0 00-.76.8.83.83 0 00.74.81.81.81 0 00-.31.63.82.82 0 00.65.8.81.81 0 00-.09.56.86.86 0 00.85.62h2.29c.3 0 .599-.038.89-.11l1.42-.47h1.9c1 0 1.27-4.64 0-4.64a5 5 0 01-.55 0c-.05 0-.15-.19-.4-.46h0c-.37-.4-.78-.91-1.07-1.19a7.18 7.18 0 01-1.7-2.25 2 2 0 00-.32-.52.83.83 0 00-1.16.09 1.39 1.39 0 00-.25.38 1.49 1.49 0 00-.09.3 2.38 2.38 0 00.07.84c.064.288.155.569.27.84.188.353.41.688.66 1a.18.18 0 01.07.08" stroke="#004B7C" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
               </svg>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="praise-consumption-small" data-supported-dps="16x16">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="praise-consumption-small" data-supported-dps="16x16" style="cursor: pointer;">
                 <defs>
                   <rect id="reactions-praise-consumption-small-a" x="1" y="1" width="14" height="14" rx="7"/>
                 </defs>
@@ -349,62 +345,55 @@
                   </g>
                 </g>
               </svg>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="empathy-consumption-small" data-supported-dps="16x16">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="empathy-consumption-small" data-supported-dps="16x16" style="cursor: pointer;">
                 <g fill="none" fill-rule="evenodd">
                   <rect width="16" height="16" rx="8"/>
                   <circle fill="#DF704D" cx="8" cy="8" r="7"/>
                   <path d="M7.71 5A2.62 2.62 0 004 5a2.65 2.65 0 000 3.75l4 4 4-4A2.65 2.65 0 0012 5a2.59 2.59 0 00-1.85-.77h0A2.57 2.57 0 008.3 5l-.3.3-.29-.3z" stroke="#77280C" fill="#FFF3F0"/>
                   <path d="M11.43 5.18a2 2 0 01.53.63c.9 1.67-.6 2.72-1.54 3.67-.6.61-1.22 1.22-1.85 1.8" opacity=".6"/>
                   <path d="M5.79 4.81a2.16 2.16 0 00-.79.11 1.77 1.77 0 00-1 .82A2.54 2.54 0 003.77 7a.28.28 0 000 .09" opacity=".4"/>
-                  <path d="M7.71 5A2.6 2.6 0 004 5a2.65 2.65 0 000 3.7l4 4 4-4A2.65 2.65 0 0012 5a2.6 2.6 0 00-1.85-.78h0A2.58 2.58 0 008.3 5l-.3.25L7.71 5z" stroke="#77280C" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.71 5A2.6 2.6 0 004 5a2.65 2.65 0 000 3.7l4 4 4-4A2.65 2.65 0 0012 5a2.6 2.6 0 00-1.85-.78h0A2.58 2.58 0 008.3 5beğel-.3.25L7.71 5z" stroke="#77280C" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
               </svg>
               <span class="" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">
                 958
               </span>
-              <div class="card-footer bg-white mt-1">
-                <span>
+              <div class="card-footer bg-white mt-1 d-flex justify-content-between">
                   <button class="ref border-0">
-                    <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem">
-                      <span class="ml-2 mediatext">
+                    <i class="far fa-thumbs-up fa-md my-1" style="font-size: 1.2rem;">
+                      <span class="ml-1 mediatext">
                         Beğen
                       </span>
                     </i>
                   </button>
-                </span>
-                <span>
                   <button class="ref border-0">
-                    <i class="far fa-comment fa-md" style="font-size: 1.2rem">
-                      <span class="ml-2 mediatext">
+                    <i class="far fa-comment fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
                         Yorum Yap
                       </span>
                     </i>
                   </button>
-                  <span>
-                    <button class="ref border-0">
-                      <i class="far fa-share fa-md" style="font-size: 1.2rem">
-                        <span class="ml-2 mediatext">
-                          Paylaş
-                        </span>
-                      </i>
-                    </button>
-                  </span>
-                  <span>
-                    <button class="ref border-0">
-                      <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem">
-                        <span class="ml-2 mediatext">
-                          Gönder
-                        </span>
-                      </i>
-                    </button>
-                  </span>
+                  <button class="ref border-0">
+                    <i class="fas fa-share fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
+                        Paylaş
+                      </span>
+                    </i>
+                  </button>
+                  <button class="ref border-0">
+                    <i class="fas fa-paper-plane fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
+                        Gönder
+                      </span>
+                    </i>
+                  </button>
               </div>
             </div>
           </div>
           <div class="card mt-2">
             <div class="card-header d-flex justify-content-between bg-white border-0">
               <div class="d-flex justify-content-start">
-                <img src="assets\ozan_halis_ilter.jpg" class="postphoto my-auto">
+                <img src="./assets/other-pictures/1698501160273.jfif" class="postphoto my-auto" style="cursor: pointer;">
                 <div class="d-flex flex-column align-baseline pl-3">
                   <span class="posttext">
                     <a href="#" target="_blank" style="color: #212529;">
@@ -420,7 +409,7 @@
                 </div>
               </div>
               <div>
-                <i class="fas fa-ellipsis-h fa-md"></i>
+                <i class="fas fa-ellipsis-h fa-md" style="cursor: pointer;"></i>
               </div>
             </div>
             <div>
@@ -429,12 +418,13 @@
               </p>
               <div>
               <img
-                src="assets\yetgen.png"
+                src="./assets/other-pictures/1_gdDWFSvHDt57DS2zsh_0Bg.png"
                 class="card-img-top mb-1"
+                style="cursor: pointer;"
                 alt="..."
               />
               </div>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="like-consumption-small" data-supported-dps="16x16" class="ml-3">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="like-consumption-small" data-supported-dps="16x16" class="ml-3" style="cursor: pointer;">
                 <g fill="none" fill-rule="evenodd">
                   <rect width="16" height="16" rx="8"/>
                   <circle fill="#1485BD" cx="8" cy="8" r="7"/>
@@ -442,7 +432,7 @@
                   <path d="M7.43 6.43H4.11a.88.88 0 00-.88 1 .91.91 0 00.93.84h.16a.78.78 0 00-.76.8.83.83 0 00.74.81.81.81 0 00-.31.63.82.82 0 00.65.8.81.81 0 00-.09.56.86.86 0 00.85.62h2.29c.3 0 .599-.038.89-.11l1.42-.47h1.9c1 0 1.27-4.64 0-4.64a5 5 0 01-.55 0c-.05 0-.15-.19-.4-.46h0c-.37-.4-.78-.91-1.07-1.19a7.18 7.18 0 01-1.7-2.25 2 2 0 00-.32-.52.83.83 0 00-1.16.09 1.39 1.39 0 00-.25.38 1.49 1.49 0 00-.09.3 2.38 2.38 0 00.07.84c.064.288.155.569.27.84.188.353.41.688.66 1a.18.18 0 01.07.08" stroke="#004B7C" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
               </svg>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="praise-consumption-small" data-supported-dps="16x16">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="praise-consumption-small" data-supported-dps="16x16" style="cursor: pointer;">
                 <defs>
                   <rect id="reactions-praise-consumption-small-a" x="1" y="1" width="14" height="14" rx="7"/>
                 </defs>
@@ -466,7 +456,7 @@
                   </g>
                 </g>
               </svg>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="empathy-consumption-small" data-supported-dps="16x16">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="empathy-consumption-small" data-supported-dps="16x16" style="cursor: pointer;">
                 <g fill="none" fill-rule="evenodd">
                   <rect width="16" height="16" rx="8"/>
                   <circle fill="#DF704D" cx="8" cy="8" r="7"/>
@@ -479,49 +469,42 @@
               <span class="" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">
                 210
               </span>
-              <div class="card-footer bg-white mt-1">
-                <span>
+              <div class="card-footer bg-white mt-1 d-flex justify-content-between">
                   <button class="ref border-0">
-                    <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem">
-                      <span class="ml-2 mediatext">
+                    <i class="far fa-thumbs-up fa-md my-1" style="font-size: 1.2rem;">
+                      <span class="ml-1 mediatext">
                         Beğen
                       </span>
                     </i>
                   </button>
-                </span>
-                <span>
                   <button class="ref border-0">
-                    <i class="far fa-comment fa-md" style="font-size: 1.2rem">
-                      <span class="ml-2 mediatext">
+                    <i class="far fa-comment fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
                         Yorum Yap
                       </span>
                     </i>
                   </button>
-                  <span>
-                    <button class="ref border-0">
-                      <i class="far fa-share fa-md" style="font-size: 1.2rem">
-                        <span class="ml-2 mediatext">
-                          Paylaş
-                        </span>
-                      </i>
-                    </button>
-                  </span>
-                  <span>
-                    <button class="ref border-0">
-                      <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem">
-                        <span class="ml-2 mediatext">
-                          Gönder
-                        </span>
-                      </i>
-                    </button>
-                  </span>
+                  <button class="ref border-0">
+                    <i class="fas fa-share fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
+                        Paylaş
+                      </span>
+                    </i>
+                  </button>
+                  <button class="ref border-0">
+                    <i class="fas fa-paper-plane fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
+                        Gönder
+                      </span>
+                    </i>
+                  </button>
               </div>
             </div>
           </div>
           <div class="card mt-2">
             <div class="card-header d-flex justify-content-between bg-white border-0">
               <div class="d-flex justify-content-start">
-                <img src="assets\ramazan_sancar.jpg" class="postphoto my-auto">
+                <img src="./assets/other-pictures/1599749901304.jpg" class="postphoto my-auto" style="cursor: pointer;">
                 <div class="d-flex flex-column align-baseline pl-3">
                   <span class="posttext">
                     <a href="#" target="_blank" style="color: #212529;">
@@ -546,12 +529,13 @@
               </p>
               <div>
               <img
-                src="assets\ozel_harecat.jpeg"
+                src="./assets/other-pictures/1608202571866.jpeg"
                 class="card-img-top mb-1"
+                style="cursor: pointer;"
                 alt="..."
               />
               </div>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="like-consumption-small" data-supported-dps="16x16" class="ml-3">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="like-consumption-small" data-supported-dps="16x16" class="ml-3" style="cursor: pointer;">
                 <g fill="none" fill-rule="evenodd">
                   <rect width="16" height="16" rx="8"/>
                   <circle fill="#1485BD" cx="8" cy="8" r="7"/>
@@ -559,7 +543,7 @@
                   <path d="M7.43 6.43H4.11a.88.88 0 00-.88 1 .91.91 0 00.93.84h.16a.78.78 0 00-.76.8.83.83 0 00.74.81.81.81 0 00-.31.63.82.82 0 00.65.8.81.81 0 00-.09.56.86.86 0 00.85.62h2.29c.3 0 .599-.038.89-.11l1.42-.47h1.9c1 0 1.27-4.64 0-4.64a5 5 0 01-.55 0c-.05 0-.15-.19-.4-.46h0c-.37-.4-.78-.91-1.07-1.19a7.18 7.18 0 01-1.7-2.25 2 2 0 00-.32-.52.83.83 0 00-1.16.09 1.39 1.39 0 00-.25.38 1.49 1.49 0 00-.09.3 2.38 2.38 0 00.07.84c.064.288.155.569.27.84.188.353.41.688.66 1a.18.18 0 01.07.08" stroke="#004B7C" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
               </svg>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="praise-consumption-small" data-supported-dps="16x16">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="praise-consumption-small" data-supported-dps="16x16" style="cursor: pointer;">
                 <defs>
                   <rect id="reactions-praise-consumption-small-a" x="1" y="1" width="14" height="14" rx="7"/>
                 </defs>
@@ -583,7 +567,7 @@
                   </g>
                 </g>
               </svg>
-              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="empathy-consumption-small" data-supported-dps="16x16">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" id="empathy-consumption-small" data-supported-dps="16x16" style="cursor: pointer;">
                 <g fill="none" fill-rule="evenodd">
                   <rect width="16" height="16" rx="8"/>
                   <circle fill="#DF704D" cx="8" cy="8" r="7"/>
@@ -596,133 +580,126 @@
               <span class="" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 13px; color: #474747;">
                 224
               </span>
-              <div class="card-footer bg-white mt-1">
-                <span>
+              <div class="card-footer bg-white mt-1 d-flex justify-content-between">
                   <button class="ref border-0">
-                    <i class="far fa-thumbs-up fa-md" style="font-size: 1.2rem">
-                      <span class="ml-2 mediatext">
+                    <i class="far fa-thumbs-up fa-md my-1" style="font-size: 1.2rem;">
+                      <span class="ml-1 mediatext">
                         Beğen
                       </span>
                     </i>
                   </button>
-                </span>
-                <span>
                   <button class="ref border-0">
-                    <i class="far fa-comment fa-md" style="font-size: 1.2rem">
-                      <span class="ml-2 mediatext">
+                    <i class="far fa-comment fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
                         Yorum Yap
                       </span>
                     </i>
                   </button>
-                  <span>
-                    <button class="ref border-0">
-                      <i class="far fa-share fa-md" style="font-size: 1.2rem">
-                        <span class="ml-2 mediatext">
-                          Paylaş
-                        </span>
-                      </i>
-                    </button>
-                  </span>
-                  <span>
-                    <button class="ref border-0">
-                      <i class="fas fa-paper-plane fa-md" style="font-size: 1.2rem">
-                        <span class="ml-2 mediatext">
-                          Gönder
-                        </span>
-                      </i>
-                    </button>
-                  </span>
+                  <button class="ref border-0">
+                    <i class="fas fa-share fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
+                        Paylaş
+                      </span>
+                    </i>
+                  </button>
+                  <button class="ref border-0">
+                    <i class="fas fa-paper-plane fa-md my-1" style="font-size: 1.2rem">
+                      <span class="ml-1 mediatext">
+                        Gönder
+                      </span>
+                    </i>
+                  </button>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- sağ panel -->
+        <!-- Center Section End -->
+        <!-- Right Aside Start -->
         <div class="d-none d-xl-block col-xl-3">
-          <div class="card" style="width: 20rem">
+          <div class="card">
             <div class="card-header bg-white border-0">
               <span style="font-weight: 500;">
                 Akışınıza ekleyin
               </span>
               <span>
-                <i class="fas fa-info-circle float-right"></i>
+                <i class="fas fa-info-circle float-right" style="cursor: pointer;"></i>
               </span>
             </div>
             <div class="card-title">
               <div class="ml-3">
-                <img src="assets\kodluyoruz.png" style="width: 50px; height: 50px; border-radius: 50%"/>
-                <span class="header ml-1" style="font-size: 14px">
+                <img src="./assets/profile-pictures/kodluyoruz.png" style="width: 45px; height: 45px; border-radius: 50%; cursor: pointer;"/>
+                <span class="header ml-1" style="font-size: 12px; cursor: pointer;">
                   Kodluyoruz
                 </span>
                 <span class="float-right mr-3 mt-2">
-                  <button class="btn btn-outline-info btn-sm" style="border-radius: 50px">
-                    <strong>+ Takip Et</strong>
+                  <button class="btn btn-outline-info btn-sm" style="border-radius: 50px; margin-top: -3px;">
+                    <strong style="font-size: 13px;cursor: pointer;">+ Takip Et</strong>
                   </button>
                 </span>
               </div>
             </div>
             <div class="card-title">
               <div class="ml-3">
-                <img src="assets\podfreshco.jpg" style="width: 50px; height: 50px; border-radius: 50%"/>
-                <span class="header ml-1" style="font-size: 14px">
+                <img src="./assets/profile-pictures/podfreshco.jpg"  style="width: 45px; height: 45px; border-radius: 50%; cursor: pointer;"/>
+                <span class="header ml-1" style="font-size: 12px; cursor: pointer;">
                   Podfresh
                 </span>
                 <span class="float-right mr-3 mt-2">
-                  <button class="btn btn-outline-info btn-sm" style="border-radius: 50px">
-                    <strong>+ Takip Et</strong>
+                  <button class="btn btn-outline-info btn-sm" style="border-radius: 50px; margin-top: -3px;">
+                    <strong style="font-size: 13px">+ Takip Et</strong>
                   </button>
                 </span>
               </div>
             </div>
             <div class="card-title">
               <div class="ml-3">
-                <img src="assets\navlungotr.jpg" style="width: 50px; height: 50px; border-radius: 50%"/>
-                <span class="header ml-1" style="font-size: 14px">
+                <img src="./assets/profile-pictures/navlungotr.jpg" style="width: 45px; height: 45px; border-radius: 50%; cursor: pointer;"/>
+                <span class="header ml-1" style="font-size: 12px; cursor: pointer;">
                   Navlungo
                 </span>
                 <span class="float-right mr-3 mt-2">
-                  <button class="btn btn-outline-info btn-sm" style="border-radius: 50px">
-                    <strong>+ Takip Et</strong>
+                  <button class="btn btn-outline-info btn-sm" style="border-radius: 50px; margin-top: -3px;">
+                    <strong style="font-size: 13px">+ Takip Et</strong>
                   </button>
                 </span>
               </div>
             </div>
-            <div class="card-footer bg-white border-0">
+            <div class="card-footer bg-white border-0" style="padding: 2px;">
             </div>
           </div>
-          <div class="card mt-2" style="width: 20rem">
+          <div class="card mt-2">
             <div class="card-header bg-white border-0">
-              <span style="font-weight: 500;">
+              <span style="font-weight: 500; font-size: 12px;">
                 Bugünün en çok izlenen eğitimleri
-              </span><span><i class="fas fa-info-circle float-right"></i></span>
+              </span><span><i class="fas fa-info-circle float-right" style="cursor: pointer;"></i></span>
             </div>
             <div class="card-title">
               <ol>
-                <li>
-                  The Six Morning Habits of High Perf...
-                  <div style="font-weight: lighter; font-size: 13px; color: #5f5f5f;">
+                <li style="font-size: 12px; cursor: pointer;">
+                  The Six Morning Habits of High...
+                  <div style="font-weight: lighter; font-size: 11px; color: #5f5f5f;">
                     Pete Mocakatais | How to be aweso...
                   </div>
                 </li>
-                <li class="mt-2">
+                <li class="mt-2" style="font-size: 12px; cursor: pointer;">
                   Onconscious Blas
-                  <div style="font-weight: lighter; font-size: 13px; color: #5f5f5f;">
+                  <div style="font-weight: lighter; font-size: 11px; color: #5f5f5f;">
                     Stacey Gordon
                   </div>
                 </li>
-                <li class="mt-2">
-                  Critical Thinking for Better Judgme...
-                  <div style="font-weight: lighter; font-size: 13px; color: #5f5f5f;">
+                <li class="mt-2" style="font-size: 12px; cursor: pointer;">
+                  Critical Thinking for Better Jud...
+                  <div style="font-weight: lighter; font-size: 11px; color: #5f5f5f;">
                     Becki Saltzman
                   </div>
                 </li>
               </ol>
             </div>
-            <div class="card-footer bg-white text-center" style="color: #0a66c2; font-size: 15px; font-weight: 500; margin-top: -25px;">
+            <div class="card-footer bg-white text-center" style="color: #0a66c2; font-size: 13px; font-weight: 500; margin-top: -20px; cursor: pointer;">
               Linkedin Learning'de daha fazlasını göster
             </div>
           </div>
-          <div class="text-center mt-3 ml-3" style="position: sticky; top: 4rem; overflow: visible;">
+          <div class="text-center mt-3" style="position: sticky; top: 4rem; overflow: visible;">
             <ul class="list-inline">
               <li class="list-inline-item font-weight-normal">
                 <a href="#" class="link">
@@ -755,29 +732,31 @@
                 </a>
               </li>
             </ul>
-            <div class="text-center" style="margin-top: 10px">
-              <img src="assets\linkedIn_logo.svg" width="90px" height="20px"/>
-              <span style="font-size: 12px; margin-left: -15px">
+            <div class="text-center" style="margin-top: 10px;">
+              <img src="./assets/other-pictures/linkedin-logo.svg" width="54px" height="12px" style="cursor: pointer;"/>
+              <span style="font-size: 12px;">
                 Linkedin Corporation © 2023
               </span>
             </div>
           </div>
         </div>
+        <!-- Right Aside End -->
       </div>
     </div>
-    <!-- mesajlaşma -->
-    <nav class="navbar navbar-expand-xl navbar-light bg-dark fixed-bottom bg-white border" style="height: 50px; width: 300px; border-radius: 5px; margin-left: auto; right: 15px;">
+    <!-- Messagin Start -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-bottom bg-white border pl-1" style="height: 50px; width: 300px; border-radius: 5px; margin-left: auto; right: 15px;">
       <a class="navbar-brand" href="#">
-        <img src="assets\cengizcmataraci.jpg" style="width: 30px; height: 30px; border-radius: 50%;"/>
+        <img src="./assets/profile-pictures/cengiz-c-mataraci.jpg" style="width: 30px; height: 30px; border-radius: 50%;"/>
       </a>
-      <span style="font-size: 14px; font-weight: bold; font-family:Arial, Helvetica, sans-serif;">
+      <span style="font-size: 14px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;cursor: pointer;">
         <strong>Mesajlaşma</strong>
       </span>
-      <span class="offset-3">
-        <img src="/assets/edit-regular.svg" width="15px" height="15px">
+      <span class="offset-3 mt-n1" style="cursor: pointer;">
+        <img src="./assets/icons/edit-regular.svg" width="15px" height="15px">
       </span>
-      <span><i class="fas fa-ellipsis-h fa-sm ml-3"></i></span>
-      <span><i class="fas fa-chevron-up fa-sm ml-3"></i></span>
+      <span><i class="fas fa-ellipsis-h fa-sm ml-3" style="cursor: pointer;"></i></span>
+      <span><i class="fas fa-chevron-up fa-sm mx-3" style="cursor: pointer;"></i></span>
     </nav>
+    <!-- Messagin End -->
   </body>
 </html>
